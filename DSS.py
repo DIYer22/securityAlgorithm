@@ -29,7 +29,7 @@ _sig = eval(openread(espath))
 r = "文档未被改变" if pub.verify(_h, _sig) else "文档验证错误"
 formatt = '''
        明文:"%s"
-       签名:"%s"
+       摘要:"%s"
      (s, r):"%s"
     验证结果:"%s"
 '''
